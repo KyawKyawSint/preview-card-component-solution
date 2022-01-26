@@ -1,0 +1,169 @@
+body {
+    background-color: hsl(217, 54%, 11%);    
+}
+
+.container-fluid {
+    height: 95vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card-img-top {    
+    border-radius: 10px;
+}
+
+.card-body {
+    padding: 10px 0;
+    
+}
+
+.card-title, .card-text {
+    font-family: 'Outfit', sans-serif;
+    text-align: left;
+}
+
+.card-title {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-text {        
+    font-size: 15px;
+}
+
+.ethText {
+    color: hsl(178, 100%, 50%);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.timeNoticeText {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.noteContainer {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+hr:not([size]) {
+    height: 1.7px;
+}
+
+hr {    
+    color: hsl(215, 32%, 27%);
+    margin: 0 auto;    
+}
+
+.avatarImage {
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.footerText1, .timeNoticeText, .card-text {
+    color: hsl(215, 51%, 70%)    
+}
+
+.footerText1, .footerText2 {
+    font-size: 13px;
+}
+
+.footerText2 {
+    color: white;
+}
+
+.hoverImageContainer {
+    position: relative;
+}
+
+.hoverImage:hover {
+    cursor: pointer;        
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;    
+    background-color: var(--hsl(178, 100%, 50%));
+    border-radius: 10px;
+    cursor: pointer;    
+}
+
+.overlayIcon {
+    width: 30px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.hoverImageContainer:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.hoverImageContainer:hover .overlayIcon {
+    display: block;
+}
+
+.hoverItem:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width : 576px) {
+
+    .container-fluid {
+        height: 105vh;               
+    }
+
+    .card {
+        height: 60%;        
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .card-img-top {                
+        width: 250px;
+        height: 100%;
+        margin-right: 5px;                    
+    }
+
+    .card-title {
+        margin-top: 20px;
+        font-size: 1.35rem;        
+    }
+    
+    .card-text {
+        margin-top: 25px;
+    }
+
+    .avatarImage {
+        width: 20px;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+}
